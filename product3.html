@@ -1,0 +1,363 @@
+<html>
+<head>
+<title>Cafe</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<style>
+
+.effect1 {
+    overflow: hidden;
+    clip-path: Rectangle(50% at 50% 50%);
+    position: relative;
+}
+
+.effect1 img {
+    position: relative;
+}
+
+/*Line*/
+.effect1 .caption:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    width: 3px;
+    height: 0;
+    background-color: #fff;
+    transition: top .5s, height .5s;
+}
+
+.effect1:hover .caption:before, .effect1:active .caption:before {
+    top: 0;
+    height: 100%;
+}
+
+/*Left & Right Side*/
+.effect1 .leftSide,
+.effect1 .rightSide {
+    position: absolute;
+    top: 0;
+    left: -125%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .2) 100%);
+    transition: left .7s;
+}
+
+.effect1 .rightSide {
+    left: 125%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .2) 100%);
+}
+
+.effect1:hover .leftSide,
+.effect1:active .leftSide {
+    left: 0;
+}
+
+.effect1:hover .rightSide,
+.effect1:active .rightSide {
+    left: 49%;
+}
+
+/* Text */
+.effect1 .leftInfo,
+.effect1 .rightInfo {
+    opacity: 0;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    transition: opacity .6s, left .6s;
+}
+
+.effect1 .leftInfo {
+    color: black;
+    transform: translate(-100%, -50%);
+    left: 0;
+}
+
+.effect1 .rightInfo {
+    transform: translateY(-50%);
+    left: 100%;
+}
+
+.effect1:hover .leftInfo,
+.effect1:active .leftInfo
+{
+    opacity: 1;
+    left: 47%;
+}
+
+.effect1:hover .rightInfo,
+.effect1:active .rightInfo {
+    opacity: 1;
+    left: 53%;
+}
+
+</style>
+
+
+
+</head>
+ 
+  <nav class="navbar navbar-expand-md navbar-dark " style="background: linear-gradient(to bottom, orange, palegoldenrod);">
+    <div class="container-fluid">
+      <a href="index1.html"> <img src="img/cafelogo.jpg" class="rounded-circle" width="100px" /></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active text-dark" aria-current="page" href="product1.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="index1.html">Home</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link text-dark" href="details.html"><b>Details<b></a>
+
+          </li>
+        </ul>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+		<ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+       <li class="nav-item">
+          <a class="nav-link text-dark" href="login.html"><b>Login<b></a>
+          </li> 
+		  <li class="nav-item">
+          <a class="nav-link text-dark" href="sign-up.html"><b>Sign up<b></a>
+          </li>
+		  </ul>
+      </div>
+    </div>
+  </nav>
+   
+  <br><br>
+  <marquee direction="right" scrollamount="10"> ♥ 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐂𝐨𝐅𝐢𝐂𝐢 ♥ </marquee>
+  <br><br> 
+<body>
+
+   <div class="container"> 
+   <div class="row"> 
+   
+   <div class="col-3" style="border:1px solid brown;border-radius:30px"> 
+   <center>
+   <h1> Manu</h1></center>
+   <ul>
+   <li><a>.Cappuccino</a></li>
+   <li><a>.Esspresso</a></li>
+   <li><a>.Latte</a></li>
+   <li><a>.Mocha</a></li>
+   <li><a>.Flat white</a></li>
+   <li><a>.Americano</a></li>
+    <li><a>.Ice Cappuccino</a></li>
+   <li><a>.Ice Esspresso</a></li>
+   <li><a>.Ice Latte</a></li>
+   <li><a>.Ice Mocha</a></li>
+   <li><a>.Ice Flat white</a></li>
+   <li><a>.Ice Americano</a></li>
+   <li><a>.Cheese Cake</a></li>
+   <li><a>.Strawberry Cake</a></li>
+   <li><a>.Cupcake</a></li>
+   <li><a>.Chocolate Cake</a></li>
+   <li><a>.Blueberry Cheese Cake</a></li>
+   <li><a>.Orange Cake</a></li>
+
+   
+   </ul>
+   </div>
+
+   
+   <div  class="col-9"> 
+      <div class="row"> 
+          <div class="col-4">
+<div class="card" style="width: 18rem;">
+<div class="card-body">
+  <div class="effect1 container">
+<img src="img/cc.jpg" class="img-thumbnail" width="300px" height="200px" >  
+<div class="caption">
+  <div class="leftSide"></div>
+  <div class="rightSide"></div>
+  <span class="rightInfo">Cake</span>
+  <span class="leftInfo">Cup</span>
+</div> </div>
+ <p class="card-text">Flour,Sugar ,Butter,Eggs ,Milk ,Baking Powder,Salt ,Vanilla Extract</p>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+</div>
+</div>
+</div>
+         
+<div class="col-4">
+<div class="card" style="width: 18rem;">
+<div class="card-body">
+  <div class="effect1 container">
+
+<img src="img/ck.jpg" class="img-thumbnail" width="300px" height="200px" >  
+    <div class="caption">
+      <div class="leftSide"></div>
+      <div class="rightSide"></div>
+      <span class="rightInfo">Cake</span>
+      <span class="leftInfo">Cheese</span>
+    </div> </div>
+    <p class="card-text">Butter ,Sugar ,Cream Cheese ,Sugar ,Eggs ,Vanilla Extract ,Sour Cream or Heavy Cream</p>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+
+  
+    </div>
+</div>
+</div>
+
+          <div class="col-4">
+<div class="card" style="width: 18rem;">
+<div class="card-body">
+  <div class="effect1 container">
+
+<img src="img/choco.jpg" class="img-thumbnail" width="300px" height="200px" >  
+    <div class="caption">
+      <div class="leftSide"></div>
+      <div class="rightSide"></div>
+      <span class="rightInfo">Cake</span>
+      <span class="leftInfo">Choco</span>
+    </div>
+  </div>
+    <p class="card-text">Flour ,Sugar ,Cocoa Powder ,Baking Powder and Baking Soda ,Salt ,Eggs ,Milk  ,Vegetable Oil ,Vanilla Extract ,Hot Water</p>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+
+  
+  </div>
+    </div>
+
+</div>
+ <div class="col-4">
+<div class="card" style="width: 18rem;">
+<div class="card-body">
+  <div class="effect1 container">
+
+<img src="img/st.jpg" class="img-thumbnail" width="300px" height="200px" >  
+    <div class="caption">
+      <div class="leftSide"></div>
+      <div class="rightSide"></div>
+      <span class="rightInfo">Cheese Cake</span>
+      <span class="leftInfo">S.berry</span>
+    </div>
+  </div>
+    <p class="card-text">graham cracker crumbs ,sugar ,melted butter , cream cheese (softened) ,granulated sugar ,eggs
+ ,vanilla extract ,cup sour cream ,lemon juice ,fresh strawberries ,strawberry preserves or jam ,lemon juice </p>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+
+  
+    </div>
+</div>
+</div>
+
+<div class="col-4">
+  <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <div class="effect1 container">
+  
+  <img src="img/pv.jpg" class="img-thumbnail" width="300px" height="200px" >  
+      <div class="caption">
+        <div class="leftSide"></div>
+        <div class="rightSide"></div>
+        <span class="rightInfo">Cake</span>
+        <span class="leftInfo">B.berry</span>
+      </div>
+    </div>
+      <p class="card-text">flour ,granulated sugar ,unsalted butter (softened) ,cup milk ,baking powder ,vanilla extract ,salt ,eggs ,fresh or frozen blueberries</p>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+  
+    
+    </div>
+      </div>
+  
+  </div>
+
+<div class="col-4">
+  <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <div class="effect1 container">
+  
+  <img src="img/ogk.jpg" class="img-thumbnail" width="300px" height="200px" >  
+      <div class="caption">
+        <div class="leftSide"></div>
+        <div class="rightSide"></div>
+        <span class="rightInfo">Cake </span>
+        <span class="leftInfo">Orange</span>
+      </div>
+    </div>
+      <p class="card-text">flour ,granulated sugar ,unsalted butter (softened) ,cup milk ,baking powder ,vanilla extract ,salt ,eggs ,fresh or frozen Oranges</p>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Order</button>
+  
+    
+    </div>
+      </div>
+  
+  </div>
+
+ 
+ </div>
+   </div>
+   </div>
+   </div>
+   <br>
+   <div class="row">
+ <div class="col-5"></div>
+<div class="col-2"> 
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="product1.html">1</a></li>
+    <li class="page-item"><a class="page-link"  href="product2.html">2</a></li>
+    <li class="page-item"><a class="page-link" aria-current="page" href="product3.html">3</a></li>
+   
+
+  </ul>
+</nav> 
+
+<div class="col-5"></div>
+</div> 
+<br><br><br>
+
+<div>
+
+  <footer class="bg-dark text-center text-white">
+  <div class="container p-4 pb-0">
+    <section class="mb-4">
+      <a class="btn btn-outline-light btn-floating m-1" href="https://facebook.com/" role="button">
+	  <img src="img/fb.jpg" class="rounded-circle" width="30px"/>
+      </a>
+
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/" role="button"> 
+	  <img src="img/tt.jpg" class="rounded-circle" width="30px"/>
+      </a>
+
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/account/about/" role="button">	  
+	  <img src="img/gg.jpg" class="rounded-circle" width="30px"/>
+      </a>
+
+      <a class="btn btn-outline-light btn-floating m-1" href="https://instagram.com/" role="button"> 
+	  <img src="img/ig.jpg" class="rounded-circle" width="30px"/>
+	  </a>
+    </section>
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <a href="index1.html"><img src="img/lAr.jpg" width="30px" height="30px"></a>&raquo;&raquo;&raquo;&raquo;
+
+    © 2024 Copyright:
+    <a class="text-white" href="#">Cafe CoFiCi.com</a>
+  </div>
+</footer>
+  
+</div>
+  
+  
+ 
+  
+  
+  
+  
+  
+</body>
+</html>

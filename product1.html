@@ -1,0 +1,359 @@
+<html>
+<head>
+<title>Cafe</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<style>
+
+.effect1 {
+    overflow: hidden;
+    clip-path: Rectangle(50% at 50% 50%);
+    position: relative;
+}
+
+.effect1 img {
+    position: relative;
+}
+
+/*Line*/
+.effect1 .caption:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    width: 3px;
+    height: 0;
+    background-color: #fff;
+    transition: top .5s, height .5s;
+}
+
+.effect1:hover .caption:before, .effect1:active .caption:before {
+    top: 0;
+    height: 100%;
+}
+
+/*Left & Right Side*/
+.effect1 .leftSide,
+.effect1 .rightSide {
+    position: absolute;
+    top: 0;
+    left: -125%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .2) 100%);
+    transition: left .7s;
+}
+
+.effect1 .rightSide {
+    left: 125%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .2) 100%);
+}
+
+.effect1:hover .leftSide,
+.effect1:active .leftSide {
+    left: 0;
+}
+
+.effect1:hover .rightSide,
+.effect1:active .rightSide {
+    left: 49%;
+}
+
+/* Text */
+.effect1 .leftInfo,
+.effect1 .rightInfo {
+    opacity: 0;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    transition: opacity .6s, left .6s;
+}
+
+.effect1 .leftInfo {
+    color: black;
+    transform: translate(-100%, -50%);
+    left: 0;
+}
+
+.effect1 .rightInfo {
+    transform: translateY(-50%);
+    left: 100%;
+}
+
+.effect1:hover .leftInfo,
+.effect1:active .leftInfo
+{
+    opacity: 1;
+    left: 47%;
+}
+
+.effect1:hover .rightInfo,
+.effect1:active .rightInfo {
+    opacity: 1;
+    left: 53%;
+}
+
+</style>
+
+
+
+</head>
+ 
+  <nav class="navbar navbar-expand-md navbar-dark " style="background: linear-gradient(to bottom, orange, palegoldenrod);">
+    <div class="container-fluid">
+      <a href="index1.html"> <img src="img/cafelogo.jpg" class="rounded-circle" width="100px" /></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active text-dark" aria-current="page" href="product1.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="index1.html"><b>Home<b></a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link text-dark" href="details.html"><b>Details<b></a>
+
+          </li>
+        </ul>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+		<ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+       <li class="nav-item">
+          <a class="nav-link text-dark" href="login.html"><b>Login<b></a>
+          </li> 
+		  <li class="nav-item">
+          <a class="nav-link text-dark" href="sign-up.html"><b>Sign up<b></a>
+          </li>
+		  </ul>
+      </div>
+    </div>
+  </nav>
+   
+  <br><br>
+  <marquee direction="right" scrollamount="10"> ♥ 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐂𝐨𝐅𝐢𝐂𝐢 ♥ </marquee>
+  <br><br> 
+<body>
+
+   <div class="container"> 
+   <div class="row"> 
+   
+   <div class="col-3" style="border:1px solid brown;border-radius:30px"> 
+   
+    <center>
+      <h1> Manu</h1></center>
+   <ul>
+   <li>Cappuccino</li>
+   <li>Esspresso</li>
+   <li>Latte</li>
+   <li>Mocha</li>
+   <li>Flat white</li>
+   <li>Americano</li>
+    <li>Ice Cappuccino</li>
+   <li>Ice Esspresso</li>
+   <li>Ice Latte</li>
+   <li>Ice Mocha</li>
+   <li>Ice Flat white</li>
+   <li>Ice Americano</li>
+   <li>Cheese Cake</li>
+   <li>Strawberry Cake</li>
+   <li>Cupcake</li>
+   <li>Chocolate Cake</li>
+   <li>Blueberry Cheese Cake</li>
+   <li>Orange Cake</li>
+
+   </ul>
+   </div>
+
+   
+   <div  class="col-9"> 
+      <div class="row"> 
+          <div class="col-4">
+<div class="card" style="width: 18rem;">
+<div class="card-body">
+  <div class="effect1 container">
+<img src="img/c7.jpg" class="img-thumbnail" width="300px" height="200px" >  
+<div class="caption">
+  <div class="leftSide"></div>
+  <div class="rightSide"></div>
+  <span class="rightInfo">Cappuc cino</span>
+  <span class="leftInfo">Hot</span>
+</div> </div>
+ <p class="card-text">Wanna Read</p>
+        <a href="details.html"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Click Here</button></a>
+</div>
+</div>
+</div>
+         
+<div class="col-4">
+<div class="card" style="width: 18rem;">
+<div class="card-body">
+  <div class="effect1 container">
+
+<img src="img/c8.jpg" class="img-thumbnail" width="300px" height="200px" >  
+    <div class="caption">
+      <div class="leftSide"></div>
+      <div class="rightSide"></div>
+      <span class="rightInfo">Esspres so</span>
+      <span class="leftInfo">Hot</span>
+    </div> </div>
+    <p class="card-text">Wanna Read</p>
+    <a href="details.html"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Click Here</button></a>
+  
+    </div>
+</div>
+</div>
+
+          <div class="col-4">
+<div class="card" style="width: 18rem;">
+<div class="card-body">
+  <div class="effect1 container">
+
+<img src="img/c9.jpg" class="img-thumbnail" width="300px" height="200px" >  
+    <div class="caption">
+      <div class="leftSide"></div>
+      <div class="rightSide"></div>
+      <span class="rightInfo">Latte</span>
+      <span class="leftInfo">Hot</span>
+    </div>
+  </div>
+    <p class="card-text">Wanna Read </p>
+    <a href="details.html"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Click Here</button></a>
+  
+  </div>
+    </div>
+
+</div>
+ <div class="col-4">
+<div class="card" style="width: 18rem;">
+<div class="card-body">
+  <div class="effect1 container">
+
+<img src="img/c4.jpg" class="img-thumbnail" width="300px" height="200px" >  
+    <div class="caption">
+      <div class="leftSide"></div>
+      <div class="rightSide"></div>
+      <span class="rightInfo">Mocha</span>
+      <span class="leftInfo">Hot</span>
+    </div>
+  </div>
+    <p class="card-text">Wanna Read</p>
+    <a href="details.html"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Click Here</button></a>
+  
+    </div>
+</div>
+</div>
+
+<div class="col-4">
+  <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <div class="effect1 container">
+  
+  <img src="img/c5.jpg" class="img-thumbnail" width="300px" height="200px" >  
+      <div class="caption">
+        <div class="leftSide"></div>
+        <div class="rightSide"></div>
+        <span class="rightInfo">Flat White</span>
+        <span class="leftInfo">Hot </span>
+      </div>
+    </div>
+      <p class="card-text">Wanna Read</p>
+      <a href="details.html"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Click Here</button></a>  
+    
+    </div>
+      </div>
+  
+  </div>
+
+<div class="col-4">
+  <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <div class="effect1 container">
+  
+  <img src="img/c6.jpg" class="img-thumbnail" width="300px" height="200px" >  
+      <div class="caption">
+        <div class="leftSide"></div>
+        <div class="rightSide"></div>
+        <span class="rightInfo">America no</span>
+        <span class="leftInfo">Hot</span>
+      </div>
+    </div>
+      <p class="card-text">Wanna Read</p>
+      <a href="details.html"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Click Here</button></a>  
+    
+    </div>
+      </div>
+  
+  </div>
+
+ 
+ </div>
+   </div>
+   </div>
+   </div>
+   <br>
+   <div class="row">
+ <div class="col-5"></div>
+<div class="col-2"> 
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" aria-current="page" href="product1.html">1</a></li>
+    <li class="page-item"><a class="page-link" href="product2.html">2</a></li>
+    <li class="page-item"><a class="page-link" href="product3.html">3</a></li>
+  </ul>
+</nav> 
+
+
+<div class="col-5"></div>
+</div> 
+</div>
+   </div>
+<br><br><br>
+
+  
+<div>
+
+  <footer class="bg-dark text-center text-white">
+  <div class="container p-4 pb-0">
+    <section class="mb-4">
+      <a class="btn btn-outline-light btn-floating m-1" href="https://facebook.com/" role="button">
+	  <img src="img/fb.jpg" class="rounded-circle" width="30px"/>
+      </a>
+
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/" role="button"> 
+	  <img src="img/tt.jpg" class="rounded-circle" width="30px"/>
+      </a>
+
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/account/about/" role="button">	  
+	  <img src="img/gg.jpg" class="rounded-circle" width="30px"/>
+      </a>
+
+      <a class="btn btn-outline-light btn-floating m-1" href="https://instagram.com/" role="button"> 
+	  <img src="img/ig.jpg" class="rounded-circle" width="30px"/>
+	  </a>
+    </section>
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <a href="index1.html"><img src="img/lAr.jpg" width="30px" height="30px"></a>&raquo;&raquo;&raquo;&raquo;
+
+    © 2024 Copyright:
+    <a class="text-white" href="#">Cafe CoFiCi.com</a>
+  </div>
+</footer>
+  
+</div>
+  
+  
+ 
+  
+  
+  
+  
+  
+</body>
+</html>
